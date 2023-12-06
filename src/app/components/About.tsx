@@ -31,13 +31,13 @@ export default function CallToActionWithAnnotation() {
           </Heading>
           <Flex alignSelf={'center'}>
             <Text maxW={'4xl'} color={'white'} fontSize={'17'}>
-            In the world of web development, the philosophy of "Less is more" holds particular 
+            In the world of web development, the philosophy of &quot;Less is more&quot; holds particular 
             significance as it encapsulates the essence of elegant and user-centric design. 
             Embracing simplicity in web development is pivotal for fostering a seamless user experience. 
-            By minimizing unnecessary complexities, superfluous elements, and convoluted features, we can 
+            By minimizing unnecessary complexities, superfluous elements, and convoluted features, Metatower founder Myles DeBoer, can 
             create websites that not only load faster, but also resonate more effectively with users. 
-            A clean and minimalist design not only enhances the aesthetic appeal but also ensures that 
-            visitors can navigate effortlessly. At [Your LLC Name], we bring these tactics and your vision to life.
+            A clean and minimalist design not only enhances the aesthetic appeal, but also ensures that 
+            visitors can navigate effortlessly. At Metatower Media, we bring these tactics and your vision to life.
             </Text>
           </Flex>
         </Stack>
