@@ -22,7 +22,7 @@ export default function ContactFormWithSocialButtons() {
   const { hasCopied, onCopy } = useClipboard('example@example.com')
 
   return (
-    <Flex id="contact" align="center" justify="center" css={{ backgroundImage: `url('/banner5TemplateCBM.png')`, backgroundSize: 'cover', backgroundAttachment: 'fixed'}}>
+    <Flex id="contact" align="center" justify="center" backgroundImage={`url('/banner5TemplateCBM.png')`} backgroundSize= {'cover'} backgroundAttachment={'fixed'}>
       <Box m={{ base: 5, md: 16, lg: 10 }} p={{ base: 5, lg: 16 }}>
 
       <Heading textAlign={'center'} mb={{lg: '50px', sm: '30px'}} fontSize={{ base: '4xl', md: '5xl',}}>

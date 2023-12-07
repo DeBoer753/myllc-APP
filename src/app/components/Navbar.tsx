@@ -61,7 +61,7 @@ export default function Simple() {
 
   return (
     <>
-      <Box style={{ backdropFilter: scrolling ? 'blur(5px)' : 'blur(5px)' }} bg={ scrolling ? 'rgb(0, 94, 176, 0.6)' : 'rgb(0, 94, 176)'} px={4} position={"sticky"} top={0} zIndex={1000} transition="background-color 0.3s ease-in-out" >
+      <Box backdropFilter={ scrolling ? 'blur(5px)' : 'blur(5px)'} bg={ scrolling ? 'rgb(0, 94, 176, 0.6)' : 'rgb(0, 94, 176)'} px={4} position={"sticky"} top={0} zIndex={1000} transition="background-color 0.3s ease-in-out" >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'} direction={'row-reverse'}>
           <IconButton
             size={'md'}
