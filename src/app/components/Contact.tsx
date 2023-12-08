@@ -23,7 +23,7 @@ export default function ContactFormWithSocialButtons() {
   const { hasCopied, onCopy } = useClipboard('example@example.com')
 
   return (
-    <Container maxW={'100%'} id="contact"  backgroundImage={`url('/banner5TemplateCBM.png')`} backgroundSize='cover' backgroundPosition="center" >
+    <Container maxW={'100%'} id="contact"  backgroundImage={`url('/banner5TemplateCBM.png')`} backgroundSize='cover' backgroundPosition="center" backgroundAttachment='fixed'>
       <Flex align="center" justify="center" flexDir={'column'} p={{ base: 5, lg: 16 }}>
 
       <Heading textAlign={'center'} mb={{lg: '50px', sm: '30px'}} fontSize={{ base: '4xl', md: '5xl',}}>
