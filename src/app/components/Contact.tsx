@@ -37,8 +37,8 @@ export default function ContactFormWithSocialButtons() {
           <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
 
             <Stack spacing={{ base: 4, md: 4, lg: 0 }}>
-              <Box bg={useColorModeValue('white', 'gray.700')} borderRadius="lg" p={8} w={{lg: '400px', sm: '300px'}} color={useColorModeValue('gray.700', 'whiteAlpha.900')} shadow="base">
-                <VStack spacing={5}>
+              <Box bg={useColorModeValue('white', 'gray.700')} borderRadius="lg" color={useColorModeValue('gray.700', 'whiteAlpha.900')} shadow="base">
+                <VStack p={8} w={{lg: '400px', sm: '300px'}} spacing={5}>
 
                   <FormControl isRequired>
                     <FormLabel>Name</FormLabel>
