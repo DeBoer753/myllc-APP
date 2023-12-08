@@ -26,7 +26,7 @@ interface CardProps {
 const Card = ({ heading, description, toolsUsed, compatible, href, image }: CardProps) => {
 
   return (
-    <Flex h={{base: 700, md: "100%", lg: '100%'}} textAlign={{base: 'center', md: 'left'}} gap={5} border={'none'} bg={'#54C2FF'} boxShadow={"0 10px 30px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.00)"} flexDirection={{base: 'column', md: 'row'}} maxW={{ base: '500px', md: '900px' }} w={'full'} borderWidth="1px" borderRadius="lg" overflow="hidden" justify={'center'} p={5}> 
+    <Flex h={{base: 630, md: "100%", lg: '100%'}} textAlign={{base: 'center', md: 'left'}} gap={5} border={'none'} bg={'#54C2FF'} boxShadow={"0 10px 30px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.00)"} flexDirection={{base: 'column', md: 'row'}} maxW={{ base: '500px', md: '900px' }} w={'full'} borderWidth="1px" borderRadius="lg" overflow="hidden" justify={'center'} p={5}> 
         
         <Flex w={'100%'} h={300} align={'center'} justify={'center'} color={'white'}>
           <Image src={image} alt="Image Alt Text" w="" h="" objectFit="cover" />
