@@ -15,6 +15,7 @@ import {
   useClipboard,
   useColorModeValue,
   VStack,
+  Container
 } from '@chakra-ui/react'
 
 
@@ -22,8 +23,8 @@ export default function ContactFormWithSocialButtons() {
   const { hasCopied, onCopy } = useClipboard('example@example.com')
 
   return (
-    <Flex id="contact" align="center" justify="center" backgroundImage={`url('/banner5TemplateCBM.png')`} backgroundSize='cover' backgroundAttachment='fixed'>
-      <Box m={{ base: 5, md: 16, lg: 10 }} p={{ base: 5, lg: 16 }}>
+    <Container maxW={'100%'} id="contact"  backgroundImage={`url('/banner5TemplateCBM.png')`} backgroundSize='cover' backgroundAttachment='fixed'>
+      <Flex align="center" justify="center" flexDir={'column'} p={{ base: 5, lg: 16 }}>
 
       <Heading textAlign={'center'} mb={{lg: '50px', sm: '30px'}} fontSize={{ base: '4xl', md: '5xl',}}>
           Lets Chat
@@ -37,8 +38,8 @@ export default function ContactFormWithSocialButtons() {
           <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
 
             <Stack spacing={{ base: 4, md: 4, lg: 0 }}>
-              <Box bg={useColorModeValue('white', 'gray.700')} borderRadius="lg" color={useColorModeValue('gray.700', 'whiteAlpha.900')} shadow="base">
-                <VStack p={8} w={{lg: '400px', sm: '300px'}} spacing={5}>
+              <Box bg={useColorModeValue('white', 'gray.700')} borderRadius="lg" p={8} w={{lg: '400px', sm: '300px'}} color={useColorModeValue('gray.700', 'whiteAlpha.900')} shadow="base">
+                <VStack spacing={5}>
 
                   <FormControl isRequired>
                     <FormLabel>Name</FormLabel>
@@ -71,7 +72,7 @@ export default function ContactFormWithSocialButtons() {
           </VStack>
         </Box>
 
-      </Box>
-    </Flex>
+      </Flex>
+    </Container>
   )
 }
