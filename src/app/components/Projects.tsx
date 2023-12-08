@@ -26,7 +26,7 @@ interface CardProps {
 const Card = ({ heading, description, toolsUsed, compatible, href, image }: CardProps) => {
 
   return (
-    <Flex h={{base: 630, md: "100%", lg: '100%'}} textAlign={{base: 'center', md: 'left'}} gap={5} border={'none'} bg={'#54C2FF'} boxShadow={"0 10px 30px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.00)"} flexDirection={{base: 'column', md: 'row'}} maxW={{ base: '500px', md: '900px' }} w={'full'} borderWidth="1px" borderRadius="lg" overflow="hidden" justify={'center'} p={5}> 
+    <Flex h={{base: 630, md: "100%", lg: '100%'}} w={{base: '100%', md: '100%', lg: '100%'}} textAlign={{base: 'center', md: 'left'}} gap={5} border={'none'} bg={'#54C2FF'} boxShadow={"0 10px 30px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.00)"} flexDirection={{base: 'column', md: 'row'}} maxW={{ base: '500px', md: '900px' }} borderWidth="1px" borderRadius="lg" overflow="hidden" justify={'center'} p={5}> 
         
         <Flex w={'100%'} h={300} align={'center'} justify={'center'} color={'white'}>
           <Image src={image} alt="Image Alt Text" w="" h="" objectFit="cover" />
@@ -51,14 +51,14 @@ export default function gridListWith() {
   const linkArray = ['https://github.com/DeBoer753/bug-tracker-PROJECT#readme', 'https://sheltr.netlify.app/', 'https://www.deboer753-weatherbox.com/']
 
   return (
-    <Box id="projects" bg={'#69C9FF'} p={10}>
+    <Box id="projects" bg={'#69C9FF'} p={7}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Heading as={motion.div} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 } }} mt={7} fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
           Projects
         </Heading>
       </Stack>
 
-      <Container maxW={'5xl'} mt={'50px'} mb={'30px'} >
+      <Container maxW={'5xl'} mt={'50px'} mb={'30px'} p={0} >
         <Flex flexWrap="wrap" gridGap={12} justify="center">
           <Box as={motion.div} initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
             <Card
