@@ -26,7 +26,7 @@ interface CardProps {
 const Card = ({ heading, description, toolsUsed, compatible, href, image }: CardProps) => {
 
   return (
-    <Flex h={{base: 630, md: "100%", lg: '100%'}} w={{base: '100%', md: '100%', lg: '100%'}} textAlign={{base: 'center', md: 'left'}} gap={{base: 0, md: 5, lg: 5}} border={'none'} bg={'#54C2FF'} boxShadow={"0 10px 30px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.00)"} flexDirection={{base: 'column', md: 'row'}} maxW={{ base: '500px', md: '900px' }} borderWidth="1px" borderRadius="lg" overflow="hidden" justify={'center'} p={5}> 
+    <Flex h={{base: 630, md: "100%", lg: '100%'}} w={{base: '100%', md: '100%', lg: '100%'}} textAlign={{base: 'center', md: 'left'}} gap={{base: 0, md: 5, lg: 5}} border={'none'} bg={'#54C1FF'} flexDirection={{base: 'column', md: 'row'}} maxW={{ base: '500px', md: '900px' }} borderWidth="1px" borderRadius="lg" overflow="hidden" justify={'center'} p={5}> 
         
         <Flex w={'100%'} h={300} align={'center'} justify={'center'} color={'white'}>
           <Image src={image} alt="Image Alt Text" w="" h="" objectFit="cover" />
@@ -58,8 +58,8 @@ export default function gridListWith() {
         </Heading>
       </Stack>
 
-      <Container maxW={'5xl'} mt={'50px'} mb={'30px'} p={0} >
-        <Flex flexWrap="wrap" gridGap={12} justify="center">
+      <Container maxW={'5xl'} mt={'50px'} mb={'30px'} p={0} overflow={'hidden'}>
+        <Flex flexWrap="wrap" gridGap={12} justify="center" >
           <Box as={motion.div} initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
             <Card
               heading={'Bugsly'}
@@ -68,7 +68,7 @@ export default function gridListWith() {
               compatible={'Compatible Devices: desktop, tablet, and smartphone'}
               href={linkArray[0]}
               image={'bugsly.1cb9b38b25b7f1b8eace.png'}
-            />
+            /> 
           </Box>
 
           <Box as={motion.div} initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
@@ -82,7 +82,7 @@ export default function gridListWith() {
             />
           </Box>
 
-          <Box  as={motion.div} initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
+          <Box as={motion.div} initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
             <Card
               heading={'Weather Box'}
               description={'Weather Box is an interactive weather application where users can input a name of a city which then displays the city\'s forecast. The theme is based around unpacking a box with weather related contents inside. Upon each city inputted, and depending on the daily and weekly forecast given, images will appear that represent activities of what is suited best for the selected forecast.'}
