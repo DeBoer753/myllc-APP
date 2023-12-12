@@ -22,7 +22,7 @@ export default function CallToActionWithAnnotation() {
           <Heading
             pb={10}
             fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+            fontSize={{ base: '4xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
             Simply put, <br />
             <Text as={'span'} color={'#005EB0'}>
@@ -34,10 +34,10 @@ export default function CallToActionWithAnnotation() {
             In the world of web development, the philosophy of &quot;Less is more&quot; holds particular 
             significance as it encapsulates the essence of elegant and user-centric design. 
             Embracing simplicity in web development is pivotal for fostering a seamless user experience. 
-            By minimizing unnecessary complexities, superfluous elements, and convoluted features, Metatower founder Myles DeBoer, can 
+            By minimizing unnecessary complexities, superfluous elements, and convoluted features, Metatower founder,<Text as={'span'} fontStyle={'italic'} color={'rgb(0, 94, 176)'}> Myles DeBoer</Text>, can 
             create websites that not only load faster, but also resonate more effectively with users. 
             A clean and minimalist design not only enhances the aesthetic appeal, but also ensures that 
-            visitors can navigate effortlessly. At Metatower Media, we bring these tactics and your vision to life.
+            visitors can navigate effortlessly. At Metatower Media, we bring these tactics and <Text as={'span'} fontStyle={'italic'} color={'rgb(0, 94, 176)'}> your vision to life</Text>.
             </Text>
           </Flex>
         </Stack>

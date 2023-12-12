@@ -10,6 +10,7 @@ import {
   Stack,
   Text,
   useColorModeValue,
+  useBreakpointValue
 } from '@chakra-ui/react'
 
 import { motion } from 'framer-motion';
@@ -35,13 +36,19 @@ interface CardProps {
 }
 
 const Card = ({ heading, description, icon, href }: CardProps) => {
+
+  const hoverProps = useBreakpointValue({
+    base: {},
+    md: { whileHover: { scale: 1.03 }, transition: { duration: '0.3' } },
+  });
   return (
       
       <Box
-        as={motion.div} whileHover={{ scale: 1.03, boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} transition={{ duration: '0.3' }}
+        as={motion.div} 
+        {...hoverProps}
         maxW={{ base: 'full', md: '275px' }}
         bg={'#005EB0'}
-        w={'full'}
+        w={{base: '95%', md: '95%', lg: 'full'}}
         borderWidth="1px"
         borderRadius="lg"
         overflow="hidden"
@@ -84,7 +91,7 @@ export default function gridListWith() {
           <Card 
             heading={'Sleek User Interfaces'}
             icon={<Icon as={FcTemplate} w={10} h={10} />}
-            description={'Elevate user engagement with our expertise in creating sleek and intuitive user interfaces. We design interfaces that not only captivate users visually but also ensure seamless and enjoyable interactions.'}
+            description={'Elevate user engagement with our expertise in creating sleek and intuitive user interfaces. We design interfaces that not only captivate users visually, but also ensure seamless and enjoyable interactions.'}
             href={'#'}
           />
           <Card
@@ -120,13 +127,13 @@ export default function gridListWith() {
           <Card
             heading={'Photography & Video'}
             icon={<Icon as={FcMultipleCameras} w={10} h={10} />}
-            description={'Our photography services go beyond capturing images; we specialize in crafting visual narratives that resonate with your brand identity. From striking product showcases to captivating interior/exteriors of your establishment, our lens and Adobe Cloud photo and Da Vinci Resolve studio skills brings your story to life.'}
+            description={'Our photography services go beyond capturing images; we specialize in crafting visual narratives that resonate with your brand identity. From striking product showcases to captivating interior/exteriors of your establishment. Our on-hand camera gear, Adobe Cloud software, and Da Vinci Resolve studio skills will bring your story to life.'}
             href={'#'}
           />
           <Card
             heading={'Graphic & Logo Work'}
             icon={<Icon as={FcPicture} w={10} h={10} />}
-            description={'From conceptualizing unique brand elements to refining visual identities, our design process is a fusion of creativity and precision. Elevate your brand aesthetics with our expertise, and let us redefine the visual language of your business through the artistry of Adobe Photoshop'}
+            description={'From conceptualizing unique brand elements to refining visual identities, our design process is a fusion of creativity and precision. Elevate your brand aesthetics with our expertise, and let us redefine the visual language of your business through the tools of Adobe Cloud software.'}
             href={'#'}
           />
         </Flex>

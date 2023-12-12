@@ -88,7 +88,7 @@ export default function gridListWith() {
               description={'Weather Box is an interactive weather application where users can input a name of a city which then displays the city\'s forecast. The theme is based around unpacking a box with weather related contents inside. Upon each city inputted, and depending on the daily and weekly forecast given, images will appear that represent activities of what is suited best for the selected forecast.'}
               toolsUsed={'Tools Used: HTML, CSS, JavaScript, React.js, Redux, and Photoshop'}
               compatible={'Compatible Devices: desktop and tablet'}
-              href={linkArray[2]}
+              href={linkArray[2]} 
               image={'weatherBox.34ac67c4fdac042c6ad3.png'}
             />
           </Box>

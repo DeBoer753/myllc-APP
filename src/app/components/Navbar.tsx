@@ -36,7 +36,9 @@ const NavLink = (props: Props) => {
       rounded={'md'}
       _hover={{
         textDecoration: 'none',
-        bg: useColorModeValue('gray.200', 'gray.700')
+        bg: useColorModeValue('gray.100', 'gray.100'),
+        color: 'rgb(0, 94, 176)',
+        transition: 'background-color 0.2s ease-in-out'
       }}
       href={`#${(typeof children === 'string' ? children : '').toLowerCase()}`}>
       {children}
