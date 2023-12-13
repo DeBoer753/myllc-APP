@@ -53,7 +53,7 @@ export default function gridListWith() {
   return (
     <Box id="projects" bg={'#69C9FF'} p={7}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-        <Heading as={motion.div} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 } }} mt={7} fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
+        <Heading as={motion.div} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 } }} mt={'43px'} fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
           Projects
         </Heading>
       </Stack>

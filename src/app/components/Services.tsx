@@ -10,7 +10,8 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  useBreakpointValue
+  useBreakpointValue,
+  useMediaQuery
 } from '@chakra-ui/react'
 
 import { motion } from 'framer-motion';
@@ -37,15 +38,18 @@ interface CardProps {
 
 const Card = ({ heading, description, icon, href }: CardProps) => {
 
-  const hoverProps = useBreakpointValue({
-    base: {},
-    md: { whileHover: { scale: 1.03 }, transition: { duration: '0.3' } },
-  });
+  const [isHoverable] = useMediaQuery("(hover: hover)");
+  const hoverAnimation = isHoverable
+    ? {
+      y: -10,
+    }
+    : {};
+
   return (
       
       <Box
         as={motion.div} 
-        {...hoverProps}
+        whileHover={hoverAnimation}
         maxW={{ base: 'full', md: '275px' }}
         bg={'#005EB0'}
         w={{base: '95%', md: '95%', lg: 'full'}}
@@ -62,7 +66,6 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
             justify={'center'}
             color={'white'}
             rounded={'full'}
-            // bg={useColorModeValue('#69C9FF', '#69C9FF')}
             >
             {icon}
           </Flex>
