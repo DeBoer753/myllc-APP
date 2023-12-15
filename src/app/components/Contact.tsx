@@ -27,7 +27,7 @@ export default function ContactFormWithSocialButtons() {
       <Flex align="center" justify="center" flexDir={'column'} p={{ base: 16, lg: 16 }}>
 
       <Heading textAlign={'center'} mb={{lg: '50px', sm: '30px', base: '30px'}} fontSize={{ base: '4xl', md: '5xl',}}>
-          Lets Chat
+          Let&apos;s Chat
       </Heading>
 
       <Text maxW={'2xl'} textAlign={'center'} mb={10}>

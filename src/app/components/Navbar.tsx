@@ -13,6 +13,7 @@ import {
   IconButton,
   useDisclosure,
   useColorModeValue,
+  Image,
 } from '@chakra-ui/react'
 
 
@@ -79,7 +80,10 @@ export default function Simple() {
               ))}
             </HStack>
           </HStack>
-          <Box>Metatower</Box>
+          <Flex>
+            <Image ml={'5px'} w={'50px'} src='/metaTowerLogo.png'/>
+            {/* <Box ml={3} mt={1} fontWeight={'bold'} fontSize={'20px'}>Metatower</Box> */}
+          </Flex>
         </Flex>
 
         {isOpen ? (

@@ -11,7 +11,7 @@ export default function CallToActionWithAnnotation() {
 
   return (
     <Box id="home">
-      <Container maxW={'100%'} backgroundImage={`url('/banner5TemplateCBM.png')`} backgroundSize="cover" backgroundPosition="center" height="430px" >
+      <Container maxW={'100%'} backgroundImage={`url('/heroBannerImg.jpg')`} backgroundSize="cover" backgroundPosition="center" height="430px" >
       </Container>
     </Box >
   )
