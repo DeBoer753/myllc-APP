@@ -1,7 +1,6 @@
 // CHAKRA PLUGS
 'use client'
 
-
 // REACT
 import React, { useState, useEffect } from 'react';
 
@@ -14,10 +13,11 @@ import {
   useDisclosure,
   useColorModeValue,
   Image,
+  Heading
 } from '@chakra-ui/react'
 
 
-// ICONS
+// ICONS AND NAV LINKS
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
 interface Props {
@@ -46,21 +46,50 @@ const NavLink = (props: Props) => {
     </Box>
   )
 }
-export default function Simple() {
-  const [scrolling, setScrolling] = useState(false);
 
-  const handleScroll = () => {
+// NAVBAR
+export default function Navbar() {
+  // Scroll Effect 1: Navbar blur 
+  const [scrolling, setScrolling] = useState(false);
+  const handleScroll1 = () => {
     setScrolling(window.scrollY > 60);
   };
-
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll1);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll1);
     };
   }, []);
 
+  // Hamburger Icon: Open and Close 
   const { isOpen, onOpen, onClose } = useDisclosure()
+
+  // Scroll Effect 2: Image and Header fade in and out during scroll - - - - - - - - [[MAY NEED TO DELETE]]
+  const [opacity, setOpacity] = useState(1);
+  const [headingVisible, setHeadingVisible] = useState(false);
+  const [lastScrollPosition, setLastScrollPosition] = useState(0);
+
+  const handleScroll2 = () => {
+    const scrollPosition = window.scrollY;
+    const scrollThreshold = 62; // Adjust as needed
+
+    setOpacity(scrollPosition < scrollThreshold ? 1 : 0);
+    if (scrollPosition > scrollThreshold && !headingVisible) {
+      setHeadingVisible(true);
+    } else if (scrollPosition < lastScrollPosition) {
+      setHeadingVisible(false);
+    }
+    
+    setLastScrollPosition(scrollPosition);
+  };
+
+useEffect(() => {
+  window.addEventListener('scroll', handleScroll2);
+  return () => {
+    window.removeEventListener('scroll', handleScroll2);
+  };
+}, [lastScrollPosition]);
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - [[MAY NEED TO DELETE]]
 
   return (
     <>
@@ -80,10 +109,42 @@ export default function Simple() {
               ))}
             </HStack>
           </HStack>
+
+{/* Scroll Effect 2: Image and Header fade in and out during scroll - - - - - - - - [[MAY NEED TO DELETE]] */}
+
           <Flex>
-            <Image ml={'5px'} w={'50px'} src='/metaTowerLogo.png'/>
-            {/* <Box ml={3} mt={1} fontWeight={'bold'} fontSize={'20px'}>Metatower</Box> */}
+            <Image 
+            ml={'5px'} 
+            w={'60px'} 
+            src='/metaTowerLogo.png' 
+            style={{ 
+              opacity, transition: 'opacity 0.5s' 
+            }} />
+
+            <Heading
+            position={"absolute"}
+            left={2}
+            ml={5}
+            mt={2}
+            fontWeight={'semibold'}
+            fontStyle={'italic'}
+            fontSize={'20px'}
+            style={{
+              opacity: headingVisible ? 1 : 0,
+              transition: 'opacity 0.5s',
+            }}
+          >
+            Metatower Media
+            </Heading>
           </Flex>
+
+{/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - [[MAY NEED TO DELETE]] */}
+
+          {/* <Flex>
+            <Image ml={'5px'} w={'60px'} src='/metaTowerLogo.png'/>
+            <Heading ml={5} mt={2} fontWeight={'semibold'} fontStyle={'italic'} fontSize={'20px'}>Metatower</Heading>
+          </Flex> */}
+          
         </Flex>
 
         {isOpen ? (
