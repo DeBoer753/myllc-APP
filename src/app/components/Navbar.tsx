@@ -69,26 +69,32 @@ export default function Navbar() {
   const [headingVisible, setHeadingVisible] = useState(false);
   const [lastScrollPosition, setLastScrollPosition] = useState(0);
 
-  const handleScroll2 = () => {
-    const scrollPosition = window.scrollY;
-    const scrollThreshold = 62; // Adjust as needed
-
-    setOpacity(scrollPosition < scrollThreshold ? 1 : 0);
-    if (scrollPosition > scrollThreshold && !headingVisible) {
-      setHeadingVisible(true);
-    } else if (scrollPosition < lastScrollPosition) {
-      setHeadingVisible(false);
-    }
+  useEffect(() => {
+    const handleScroll2 = () => {
+      const scrollPosition = window.scrollY;
+      const scrollThreshold = 62;
     
-    setLastScrollPosition(scrollPosition);
-  };
-
-useEffect(() => {
-  window.addEventListener('scroll', handleScroll2);
-  return () => {
-    window.removeEventListener('scroll', handleScroll2);
-  };
-}, [lastScrollPosition]);
+      const scrollingUp = scrollPosition < lastScrollPosition;
+    
+      setOpacity(scrollPosition < scrollThreshold ? 1 : 0);
+    
+      // Update header visibility based on scroll direction and position
+      if (scrollingUp) {
+        setHeadingVisible(scrollPosition > scrollThreshold);
+      } else {
+        setHeadingVisible(scrollPosition >= scrollThreshold);
+      }
+    
+      setLastScrollPosition(scrollPosition);
+    };
+  
+    window.addEventListener('scroll', handleScroll2);
+  
+    // Cleanup the event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll2);
+    };
+  }, [lastScrollPosition]);
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - [[MAY NEED TO DELETE]]
 
   return (
