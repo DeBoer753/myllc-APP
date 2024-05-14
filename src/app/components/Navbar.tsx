@@ -115,9 +115,7 @@ export default function Navbar() {
               ))}
             </HStack>
           </HStack>
-
-{/* Scroll Effect 2: Image and Header fade in and out during scroll - - - - - - - - [[MAY NEED TO DELETE]] */}
-
+          
           <Flex>
             <Image 
             ml={'5px'} 
@@ -143,14 +141,6 @@ export default function Navbar() {
             Metatower Media
             </Heading>
           </Flex>
-
-{/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - [[MAY NEED TO DELETE]] */}
-
-          {/* <Flex>
-            <Image ml={'5px'} w={'60px'} src='/metaTowerLogo.png'/>
-            <Heading ml={5} mt={2} fontWeight={'semibold'} fontStyle={'italic'} fontSize={'20px'}>Metatower</Heading>
-          </Flex> */}
-          
         </Flex>
 
         {isOpen ? (
