@@ -120,7 +120,8 @@ export default function Navbar() {
             <Image 
             ml={'5px'} 
             w={'60px'} 
-            src='/metaTowerLogo.png' 
+            src='/imgs/metatower_logo.png'
+            alt=''
             style={{ 
               opacity, transition: 'opacity 0.5s' 
             }} />

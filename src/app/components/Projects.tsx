@@ -67,7 +67,7 @@ export default function gridListWith() {
               toolsUsed={'Tools Used: HTML, CSS, JavaScript, React.js, and Photoshop'}
               compatible={'Compatible Devices: desktop, tablet, and smartphone'}
               href={linkArray[0]}
-              image={'bugsly.1cb9b38b25b7f1b8eace.png'}
+              image={'/imgs/bugsly.png'}
             /> 
           </Box>
 
@@ -78,7 +78,7 @@ export default function gridListWith() {
               toolsUsed={'Tools Used: HTML, CSS, and JavaScript'}
               compatible={'Compatible Devices: desktop and tablet'}
               href={linkArray[1]}
-              image={'sheltr.c3945c4c5105551fddf8.png'}
+              image={'/imgs/sheltr.png'}
             />
           </Box>
 
@@ -89,7 +89,7 @@ export default function gridListWith() {
               toolsUsed={'Tools Used: HTML, CSS, JavaScript, React.js, Redux, and Photoshop'}
               compatible={'Compatible Devices: desktop and tablet'}
               href={linkArray[2]} 
-              image={'weatherBox.34ac67c4fdac042c6ad3.png'}
+              image={'/imgs/weatherbox.png'}
             />
           </Box>
         </Flex>
