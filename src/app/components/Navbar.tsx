@@ -154,7 +154,6 @@ export default function Navbar() {
           </Box>
         ) : null}
       </Box>
-      <h1></h1>
     </>
   )
 }
