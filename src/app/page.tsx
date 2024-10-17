@@ -1,5 +1,6 @@
 'use client'
 
+import { useRef } from "react";
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
@@ -10,16 +11,41 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 
 export default function Home() {
+  // Create refs for each section
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const servicesRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+  const homeRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Projects />
+      {/* Pass the refs to Navbar */}
+      <Navbar
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        servicesRef={servicesRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+      />
+      <div ref={homeRef}>
+        <Hero />
+      </div>
+      <div ref={aboutRef}>
+        <About />
+      </div>
+      <div ref={servicesRef}>
+        <Services />
+      </div>
+      <div ref={projectsRef}>
+        <Projects />
+      </div>
       <Testimonials />
-      <Contact />
+      <div ref={contactRef}>
+        <Contact />
+      </div>
       <Footer />
     </>
   )
 }
+ 
