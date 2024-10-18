@@ -1,8 +1,11 @@
+// CLIENT
 'use client'
 
+// CHAKRA
 import { Avatar, Box, Stack, Text, useColorModeValue, Heading, Divider } from '@chakra-ui/react'
 
-export default function WithLargeQuote() {
+// TESTIMONIALS
+export default function Testimonials() {
   return (
     <Stack  
       bg={'#005EB0'}

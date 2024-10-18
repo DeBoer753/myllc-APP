@@ -1,5 +1,7 @@
+// CLIENT
 'use client'
 
+// CHAKRA 
 import {
   Box,
   Button,
@@ -18,8 +20,9 @@ import {
   Container
 } from '@chakra-ui/react'
 
-
-export default function ContactFormWithSocialButtons() {
+// CONTACT
+export default function Contact() {
+  
   const { hasCopied, onCopy } = useClipboard('example@example.com')
 
   return (

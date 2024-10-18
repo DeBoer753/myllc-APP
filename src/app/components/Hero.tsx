@@ -1,13 +1,14 @@
+// CLIENT
 'use client'
 
-import Head from 'next/head'
+// CHAKRA
 import {
   Box,
   Container
 } from '@chakra-ui/react'
 
-
-export default function CallToActionWithAnnotation() {
+// HERO
+export default function Hero() {
 
   return (
     <Box id="home">

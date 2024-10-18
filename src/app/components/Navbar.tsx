@@ -1,6 +1,10 @@
+// CLIENT
 'use client'
 
+// REACT
 import React, { useEffect, useState } from 'react';
+
+// CHAKRA
 import {
   Box,
   Flex,
@@ -13,6 +17,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
+// INTERFACE (in relation to page.tsx)
 interface NavbarProps {
   homeRef: React.RefObject<HTMLDivElement>;
   aboutRef: React.RefObject<HTMLDivElement>;
@@ -21,10 +26,16 @@ interface NavbarProps {
   contactRef: React.RefObject<HTMLDivElement>;
 }
 
-const Links = ['Home', 'About', 'Services', 'Projects', 'Contact'];
-
+// NAVBAR
 export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, contactRef }: NavbarProps) {
+
+  const Links = ['Home', 'About', 'Services', 'Projects', 'Contact'];
+  
+  // A pre made hook (useDisclosure) to help with open and closes
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  // Link button color value stored as variable 
+  const hoverBg = useColorModeValue('gray.100', 'gray.100');
 
   // Scroll-to-section function for smooth scrolling
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
@@ -126,16 +137,18 @@ export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, co
                   rounded={'md'}
                   _hover={{
                     textDecoration: 'none',
-                    bg: useColorModeValue('gray.100', 'gray.700'),
+                    bg: hoverBg,
+                    color: 'rgb(0, 94, 176)',
+                    transition: 'background-color 0.2s ease-in-out'
                   }}
                   onClick={() => scrollToSection(linkToRefMap[link as keyof typeof linkToRefMap])}
                 >
                   {link}
-                </Box>
-              ))}
-            </HStack>
-          </HStack>
-        </Flex>
+                </Box> 
+              ))} 
+            </HStack> 
+          </HStack>  
+        </Flex> 
 
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>

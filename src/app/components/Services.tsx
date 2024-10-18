@@ -1,5 +1,7 @@
+// CLIENT
 'use client'
 
+// CHAKRA
 import {
   Box,
   Divider,
@@ -14,10 +16,11 @@ import {
   useMediaQuery
 } from '@chakra-ui/react'
 
+// FRAMER MOTION
 import { motion } from 'framer-motion';
 
+// REACT
 import { ReactElement } from 'react'
-
 import {
   FcMultipleCameras,
   FcBullish,
@@ -29,6 +32,7 @@ import {
   FcTemplate
 } from 'react-icons/fc'
 
+// INTERFACE
 interface CardProps {
   heading: string
   description: string
@@ -36,6 +40,7 @@ interface CardProps {
   href: string
 }
 
+// CARD TEMPLATE
 const Card = ({ heading, description, icon, href }: CardProps) => {
 
   const [isHoverable] = useMediaQuery("(hover: hover)");
@@ -81,7 +86,8 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
   )
 }
 
-export default function gridListWith() {
+// SERVICES
+export default function Services() {
   return (
     <Box id="services" pb={20} bg={'#54C2FF'}>
 

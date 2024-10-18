@@ -1,5 +1,7 @@
+// CLIENT
 'use client'
 
+// CHAKRA
 import {
   Box, 
   Button, 
@@ -11,9 +13,11 @@ import {
   useColorModeValue,
   Image
 } from '@chakra-ui/react'
-import { motion } from 'framer-motion';
-import { ReactElement } from 'react'
 
+// FRAMER MOTION
+import { motion } from 'framer-motion';
+
+// INTERFACE
 interface CardProps {
   heading: string
   description: string
@@ -23,6 +27,7 @@ interface CardProps {
   image: string
 }
 
+// CARD TEMPLATE
 const Card = ({ heading, description, toolsUsed, compatible, href, image }: CardProps) => {
 
   return (
@@ -46,7 +51,8 @@ const Card = ({ heading, description, toolsUsed, compatible, href, image }: Card
   )
 }
 
-export default function gridListWith() {
+// PROJECTS
+export default function Projects() {
 
   const linkArray = ['https://github.com/DeBoer753/bug-tracker-PROJECT#readme', 'https://sheltr.netlify.app/', 'https://www.deboer753-weatherbox.com/']
 
@@ -91,9 +97,9 @@ export default function gridListWith() {
               href={linkArray[2]} 
               image={'/imgs/weatherbox.png'}
             />
-          </Box>
-        </Flex>
-      </Container>
-    </Box>
+          </Box> 
+        </Flex> 
+      </Container> 
+    </Box> 
   )
 }
