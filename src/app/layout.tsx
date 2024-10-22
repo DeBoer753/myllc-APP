@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: 'Metatower Media | Web Design, Web Development, Photography & Video ',
-  description: 'Add description or motto here',
+  title: 'Graybuck Media | Web Design, Web Development, Photography & Video ',
+  description: 'Evolving creatively, protecting your vision',
 }
 
 export default function RootLayout({

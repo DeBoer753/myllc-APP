@@ -24,21 +24,19 @@ export default function CallToActionWithAnnotation() {
             fontWeight={600}
             fontSize={{ base: '4xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
-            Simply put, <br />
+            Evolving creatively, <br />
             <Text as={'span'} color={'rgba(35, 35, 35, 0.8)'}>
-            less is more
+            protecting your vision
             </Text>
           </Heading>
           <Flex alignSelf={'center'}>
-            <Text maxW={'4xl'} color={'white'} fontSize={'17'}>
-            In the world of web development, the philosophy of &quot;Less is more&quot; holds particular 
-            significance as it encapsulates the essence of elegant and user-centric design. 
-            Embracing simplicity in web development is pivotal for fostering a seamless user experience. 
-            By minimizing unnecessary complexities, superfluous elements, and convoluted features, Graybuck founder,<Text as={'span'} fontStyle={'italic'} fontWeight={500} color={'rgba(9, 9, 9, 0.8)'}> Myles DeBoer</Text>, can 
-            create websites that not only load faster, but also resonate more effectively with users. 
-            A clean and minimalist design not only enhances the aesthetic appeal, but also ensures that 
-            visitors can navigate effortlessly. At Graybuck Media, we bring these tactics and <Text as={'span'} fontStyle={'italic'} fontWeight={500} color={'rgba(9, 9, 9, 0.8)'}> your vision to life</Text>.
-            </Text>
+              <Text maxW={'4xl'} color={'white'} fontSize={'17'}>
+              Just as a deer transforms with the seasons, Graybuck Media adapts to meet the ever-changing needs of businesses. Inspired by the resilience of a gray buck’s winter coat, we shield your brand from the 
+              elements of a fast-paced digital world. At Graybuck Media, we provide tailored services in<Text as={'span'} fontStyle={'italic'} fontWeight={600} color={'rgba(9, 9, 9, 0.8)'}>web development</Text>, ensuring your online presence 
+              is as strong as it is seamless. Our<Text as={'span'} fontStyle={'italic'} fontWeight={600} color={'rgba(9, 9, 9, 0.8)'}>photography and videography </Text>
+              capture your story with clarity and emotion, while our <Text as={'span'} fontStyle={'italic'} fontWeight={600} color={'rgba(9, 9, 9, 0.8)'}>graphic and logo design</Text> services craft unique visuals that leave a lasting impact. Let us help your business thrive in any season and bring your 
+              vision to life.
+              </Text>
           </Flex>
         </Stack>
       </Container>
