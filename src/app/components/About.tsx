@@ -32,8 +32,8 @@ export default function CallToActionWithAnnotation() {
           <Flex alignSelf={'center'}>
               <Text maxW={'4xl'} color={'white'} fontSize={'17'}>
               Just as a deer transforms with the seasons, Graybuck Media adapts to meet the ever-changing needs of businesses. Inspired by the resilience of a gray buck’s winter coat, we shield your brand from the 
-              elements of a fast-paced digital world. At Graybuck Media, we provide tailored services in<Text as={'span'} fontStyle={'italic'} fontWeight={600} color={'rgba(9, 9, 9, 0.8)'}>web development</Text>, ensuring your online presence 
-              is as strong as it is seamless. Our<Text as={'span'} fontStyle={'italic'} fontWeight={600} color={'rgba(9, 9, 9, 0.8)'}>photography and videography </Text>
+              elements of a fast-paced digital world. At Graybuck Media, we provide tailored services in<Text as={'span'} fontStyle={'italic'} fontWeight={600} color={'rgba(9, 9, 9, 0.8)'}> web development</Text>, ensuring your online presence 
+              is as strong as it is seamless. Our<Text as={'span'} fontStyle={'italic'} fontWeight={600} color={'rgba(9, 9, 9, 0.8)'}> photography and videography </Text>
               capture your story with clarity and emotion, while our <Text as={'span'} fontStyle={'italic'} fontWeight={600} color={'rgba(9, 9, 9, 0.8)'}>graphic and logo design</Text> services craft unique visuals that leave a lasting impact. Let us help your business thrive in any season and bring your 
               vision to life.
               </Text>
