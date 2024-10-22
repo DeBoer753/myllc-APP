@@ -8,7 +8,7 @@ import { Avatar, Box, Stack, Text, useColorModeValue, Heading, Divider } from '@
 export default function Testimonials() {
   return (
     <Stack  
-      bg={'#005EB0'}
+      bg={'rgba(42, 42, 42, 0.8)'}
       py={16}
       px={8}
       spacing={{ base: 8, md: 10 }}

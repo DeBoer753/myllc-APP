@@ -35,7 +35,7 @@ export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, co
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   // Link button color value stored as variable 
-  const hoverBg = useColorModeValue('gray.100', 'gray.100');
+  const hoverBg = useColorModeValue('gray.100', 'rgba(217, 217, 217, 0.8)');
 
   // Scroll-to-section function for smooth scrolling
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
@@ -82,7 +82,7 @@ export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, co
     <>
       <Box
         backdropFilter={scrolling ? 'blur(5px)' : 'blur(0)'}
-        bg={scrolling ? 'rgba(0, 94, 176, 0.8)' : 'rgba(0, 94, 176, 1)'}
+        bg={scrolling ? 'rgba(89, 89, 89, 0.8)' : 'rgba(42, 42, 42, 0.8)'}
         px={4}
         position={"sticky"}
         top={0}
@@ -93,7 +93,7 @@ export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, co
           {/* Align logo and text to the left side */}
           <Flex alignItems={'center'}>
             <Image
-              src='/imgs/metatower_logo.png'
+              src='/imgs/graybuck_logo.png'
               alt="Logo"
               ml={'5px'} 
               w={'60px'} 
@@ -112,7 +112,7 @@ export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, co
                 transition: 'opacity 0.5s',
               }}
             >
-              Metatower Media
+              Graybuck Media
             </Heading>
           </Flex>
 
@@ -138,7 +138,7 @@ export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, co
                   _hover={{
                     textDecoration: 'none',
                     bg: hoverBg,
-                    color: 'rgb(0, 94, 176)',
+                    color: 'rgba(0, 0, 0, 0.8)',
                     transition: 'background-color 0.2s ease-in-out'
                   }}
                   onClick={() => scrollToSection(linkToRefMap[link as keyof typeof linkToRefMap])}

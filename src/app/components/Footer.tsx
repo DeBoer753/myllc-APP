@@ -26,8 +26,8 @@ import {
 export default function Footer(){
   
     return (
-          <Box bg={'rgb(0, 94, 176)'} p={5} textAlign={'center'} maxW={''}>
-            <Text>© 2023 <Text as={'span'} fontWeight={'bold'}>Metatower Media LLC</Text></Text>
+          <Box bg={'rgba(42, 42, 42, 0.8)'} p={5} textAlign={'center'} maxW={''}>
+            <Text>© 2024 <Text as={'span'} fontWeight={'bold'}>Graybuck Media LLC</Text></Text>
           </Box>
     )
 }

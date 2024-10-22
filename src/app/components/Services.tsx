@@ -56,7 +56,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
         as={motion.div} 
         whileHover={hoverAnimation}
         maxW={{ base: 'full', md: '275px' }}
-        bg={'#005EB0'}
+        bg={'rgba(51, 51, 51, 0.8)'}
         w={{base: '95%', md: '95%', lg: 'full'}}
         borderWidth="1px"
         borderRadius="lg"
@@ -89,7 +89,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
 // SERVICES
 export default function Services() {
   return (
-    <Box id="services" pb={20} bg={'#54C2FF'}>
+    <Box id="services" pb={20} bg={'rgba(103, 103, 103, 0.8)'}>
 
         <Heading textAlign={'center'} pt={'70px'} pb={'10px'} fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
           Services

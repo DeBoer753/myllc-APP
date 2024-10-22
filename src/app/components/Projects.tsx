@@ -31,7 +31,7 @@ interface CardProps {
 const Card = ({ heading, description, toolsUsed, compatible, href, image }: CardProps) => {
 
   return (
-    <Flex h={{base: 630, md: "100%", lg: '100%'}} w={{base: '100%', md: '100%', lg: '100%'}} textAlign={{base: 'center', md: 'left'}} gap={{base: 0, md: 5, lg: 5}} border={'none'} bg={'#54C1FF'} flexDirection={{base: 'column', md: 'row'}} maxW={{ base: '500px', md: '900px' }} borderWidth="1px" borderRadius="lg" overflow="hidden" justify={'center'} p={5}> 
+    <Flex h={{base: 630, md: "100%", lg: '100%'}} w={{base: '100%', md: '100%', lg: '100%'}} textAlign={{base: 'center', md: 'left'}} gap={{base: 0, md: 5, lg: 5}} border={'none'} bg={'rgba(68, 68, 68, 0.8)'} flexDirection={{base: 'column', md: 'row'}} maxW={{ base: '500px', md: '900px' }} borderWidth="1px" borderRadius="lg" overflow="hidden" justify={'center'} p={5}> 
         
         <Flex w={'100%'} h={300} align={'center'} justify={'center'} color={'white'}>
           <Image src={image} alt="Image Alt Text" w="" h="" objectFit="cover" />
@@ -43,7 +43,7 @@ const Card = ({ heading, description, toolsUsed, compatible, href, image }: Card
             <Text mb={2} fontSize={'sm'}> {description}</Text>
             <Text mb={2} fontSize={'sm'}> {toolsUsed}</Text>
             <Text mb={2} fontSize={'sm'}> {compatible}</Text>
-            <Button as="a" href={href} target="_blank"  bg={'#005EB0'} h={7} p={4} size={'sm'} ml={0}>Learn more</Button>
+            <Button as="a" href={href} target="_blank"  bg={'rgba(17, 17, 17, 0.8)'} h={7} p={4} size={'sm'} ml={0}>Learn more</Button>
           </Box>
         </Flex>
 
@@ -57,7 +57,7 @@ export default function Projects() {
   const linkArray = ['https://github.com/DeBoer753/bug-tracker-PROJECT#readme', 'https://sheltr.netlify.app/', 'https://www.deboer753-weatherbox.com/']
 
   return (
-    <Box id="projects" bg={'#69C9FF'} p={7}>
+    <Box id="projects" bg={'rgba(130, 130, 130, 0.8)'} p={7}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Heading as={motion.div} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 } }} mt={'43px'} fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
           Projects
