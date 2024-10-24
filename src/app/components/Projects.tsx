@@ -70,7 +70,7 @@ export default function Projects() {
         <Box as={motion.div} initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
             <Card
               heading={'Graybuck Media'}
-              description={'A website showcasing my services in web development, photography, videography, and graphic design for small businesses.'}
+              description={'My website showcases a comprehensive range of services, including web development, photography, videography, and graphic design, all designed to help your brand stand out. Whether you are looking to build a professional website, capture high-quality visuals, or design eye-catching marketing materials, I’m here to provide personalized support that aligns with your unique business goals.'}
               toolsUsed={'Tools Used: Next.js, Typescript, Chakra UI, Framer Motion, and Photoshop'}
               compatible={'Compatible Devices: desktop, tablet, mobile'}
               href={linkArray[3]}

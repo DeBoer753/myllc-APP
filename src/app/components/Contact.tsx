@@ -53,7 +53,7 @@ export default function Contact() {
       </Heading>
 
       <Text ml={-10} mr={-10} maxW={'3xl'} textAlign={'center'} mb={10} fontSize={15} fontWeight={'bold'} color={'white'}>
-          We invite you to embark on a journey of digital transformation by securing a tailor-made website for your business. Our dedicated team is eager to collaborate with you, crafting a digital experience that seamlessly aligns with your brand identity. Act now and be among our first three clients to enjoy exclusive savings, unlocking a world of possibilities at an unprecedented value. Don&apos;t miss out on this limited-time opportunity to elevate your online presence while making the most of our special discounts. Reach out today, and let&apos;s turn your web dreams into a reality! 
+      We invite you to embark on a journey of digital transformation with a custom-designed website tailored to your business needs. Our experienced team is ready to collaborate with you, creating a digital presence that perfectly reflects your brand identity. As a special offer, the first three clients will receive exclusive savings, providing exceptional value while enhancing your online presence. Don’t miss this limited-time opportunity to elevate your brand with a professional, high-quality website. Contact us today, and let’s bring your vision to life. 
       </Text>
           
         <Box pl={0} pb={{base: 10}}>
