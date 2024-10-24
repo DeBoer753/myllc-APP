@@ -54,7 +54,7 @@ const Card = ({ heading, description, toolsUsed, compatible, href, image }: Card
 // PROJECTS
 export default function Projects() {
 
-  const linkArray = ['https://github.com/DeBoer753/bug-tracker-PROJECT#readme', 'https://sheltr.netlify.app/', 'https://www.deboer753-weatherbox.com/']
+  const linkArray = ['https://github.com/DeBoer753/bug-tracker-PROJECT#readme', 'https://sheltr.netlify.app/', 'https://www.deboer753-weatherbox.com/', 'https://graybuckmedia.com/']
 
   return (
     <Box id="projects" bg={'rgba(130, 130, 130, 0.8)'} p={7}>
@@ -66,6 +66,18 @@ export default function Projects() {
 
       <Container maxW={'5xl'} mt={'50px'} mb={'30px'} p={0} overflow={'hidden'}>
         <Flex flexWrap="wrap" gridGap={12} justify="center" >
+          
+        <Box as={motion.div} initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
+            <Card
+              heading={'Graybuck Media'}
+              description={'A website showcasing my services in web development, photography, videography, and graphic design for small businesses.'}
+              toolsUsed={'Tools Used: Next.js, Typescript, Chakra UI, Framer Motion, and Photoshop'}
+              compatible={'Compatible Devices: desktop, tablet, mobile'}
+              href={linkArray[3]}
+              image={'/imgs/graybuckmedia.png'}
+            />
+          </Box>
+          
           <Box as={motion.div} initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
             <Card
               heading={'Bugsly'}
