@@ -93,10 +93,10 @@ export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, co
           {/* Align logo and text to the left side */}
           <Flex alignItems={'center'}>
             <Image
-              src='/imgs/graybuck_logo.png'
+              src='/imgs/graybuck.png'
               alt="Logo"
               ml={'-10px'} 
-              w={'60px'} 
+              w={'80px'} 
               style={{
                 opacity: opacity,
                 transition: 'opacity 0.5s',
