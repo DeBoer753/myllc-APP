@@ -95,7 +95,7 @@ export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, co
             <Image
               src='/imgs/graybuck.png'
               alt="Logo"
-              ml={'-10px'} 
+              ml={'-20px'} 
               w={'80px'} 
               style={{
                 opacity: opacity,
