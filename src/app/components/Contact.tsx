@@ -44,7 +44,33 @@ export default function Contact() {
   }
   
   return (
-    <Container maxW={'100%'} id="contact"  backgroundImage={`url('/imgs/contact_banner.png')`}  backgroundSize={{ base: 'cover', md: 'contain', lg: 'cover' }} backgroundAttachment={{ base: 'scroll', md: 'scroll', lg: 'fixed' }}>
+    <Container
+  maxW="100%"
+  id="contact"
+  backgroundImage={`url('/imgs/contact_banner.png')`}
+  backgroundSize="cover" // Default background size
+  sx={{
+    backgroundAttachment: 'scroll', // Default for mobile
+    
+    // Media Queries
+    '@media screen and (min-width: 368px)': {
+      backgroundAttachment: 'scroll',  // Set to scroll at 390px (iPhone)
+      backgroundPosition: '-290px 0',  // Example custom positioning for 390px width
+      backgroundSize: '1000px',     // Scale up the image to 120% of its original size
+    },
+    '@media screen and (min-width: 768px)': {
+      backgroundAttachment: 'scroll',  // Set to scroll at 768px (tablet size)
+      backgroundPosition: 'center top', // Center alignment for tablets
+
+      
+    },
+    '@media screen and (min-width: 1024px)': {
+      backgroundAttachment: 'fixed',   // Fixed for desktops and larger screens
+      backgroundSize: 'cover',         // Cover background for larger screens
+
+    },
+  }}
+>
       
       <Flex align="center" justify="center" flexDir={'column'} p={{ base: 16, lg: 16 }}>
 
