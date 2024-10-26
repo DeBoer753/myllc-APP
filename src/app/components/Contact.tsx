@@ -58,11 +58,9 @@ export default function Contact() {
       backgroundPosition: '-290px 0',  // Example custom positioning for 390px width
       backgroundSize: '1000px',     // Scale up the image to 120% of its original size
     },
-    '@media screen and (min-width: 768px)': {
+    '@media screen and (min-width: 820px)': {
       backgroundAttachment: 'scroll',  // Set to scroll at 768px (tablet size)
-      backgroundPosition: 'center top', // Center alignment for tablets
-
-      
+      backgroundPosition: '1000px 0',  // Example custom positioning for 390px width
     },
     '@media screen and (min-width: 1024px)': {
       backgroundAttachment: 'fixed',   // Fixed for desktops and larger screens
