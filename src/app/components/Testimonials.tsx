@@ -44,8 +44,8 @@ export default function Testimonials() {
 
       <Text fontSize={{ base: 'xl', md: '2xl' }} textAlign={'center'} maxW={'3xl'} fontStyle={'italic'} fontWeight={'thin'}>
       Myles is a smart, creative and driven individual. He is very inquisitive and loves problem solving.
-       As a colleague and mentor I have seen Myles continual advance his skills in digital learning combing 
-       with creating projects implementing the core foundations of web development in HTML5, CSS and JavaScript.
+       As a colleague and mentor I have seen Myles continually advance his skills in digital learning combining 
+       with creating projects implementing the core foundations of web development in HTML5, CSS, and JavaScript.
         Myles is a team player and a great asset to any team!
       </Text>
       <Box textAlign={'center'}>

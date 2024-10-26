@@ -44,7 +44,7 @@ export default function Contact() {
   }
   
   return (
-    <Container maxW={'100%'} id="contact"  backgroundImage={`url('/imgs/contact_banner.png')`} backgroundSize='cover' backgroundAttachment={{ base: 'scroll', md: 'fixed' }}>
+    <Container maxW={'100%'} id="contact"  backgroundImage={`url('/imgs/contact_banner.png')`} backgroundSize='cover' backgroundAttachment={{ base: 'scroll', md: 'scroll', lg: 'fixed' }}>
       
       <Flex align="center" justify="center" flexDir={'column'} p={{ base: 16, lg: 16 }}>
 
