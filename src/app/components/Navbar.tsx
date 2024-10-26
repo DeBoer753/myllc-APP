@@ -103,7 +103,7 @@ export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, co
               }}
             />
             <Heading
-              ml={-14}
+              ml={-16}
               fontWeight={'semibold'}
               fontStyle={'italic'}
               fontSize={'20px'}
