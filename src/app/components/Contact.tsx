@@ -15,8 +15,6 @@ import {
   Stack,
   Text,
   Textarea,
-  useClipboard,
-  useColorModeValue,
   VStack,
   Container
 } from '@chakra-ui/react'
@@ -48,21 +46,21 @@ export default function Contact() {
   maxW="100%"
   id="contact"
   backgroundImage={`url('/imgs/contact_banner.png')`}
-  backgroundSize="cover" 
   sx={{
     backgroundAttachment: 'scroll', 
   
     '@media screen and (min-width: 390px)': {
-      backgroundAttachment: 'scroll',  
+      backgroundAttachment: 'scroll',
+
+ 
     },
-    '@media screen and (min-width: 481px) and (max-width: 768px)': {
-      backgroundAttachment: 'scroll',  
-      backgroundSize: 'cover', 
+    '@media screen and (min-width: 768px)': {
+      backgroundAttachment: 'scroll', 
+
     },
     '@media screen and (min-width: 1024px)': {
-      backgroundAttachment: 'fixed',   
-      backgroundSize: 'cover',         
-      // backgroundPosition: 'center',    
+      backgroundAttachment: 'fixed',
+      backgroundSize: '100% auto', 
     },
   }}
 >
