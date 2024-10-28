@@ -44,28 +44,25 @@ export default function Contact() {
   }
   
   return (
-    <Container
+< Container
   maxW="100%"
   id="contact"
   backgroundImage={`url('/imgs/contact_banner.png')`}
-  backgroundSize="cover" // Default background size
+  backgroundSize="cover" 
   sx={{
-    backgroundAttachment: 'scroll', // Default for mobile
-    
-    // Media Queries
-    '@media screen and (min-width: 368px)': {
-      backgroundAttachment: 'scroll',  // Set to scroll at 390px (iPhone)
-      backgroundPosition: '-290px 0',  // Example custom positioning for 390px width
-      backgroundSize: '1000px',     // Scale up the image to 120% of its original size
+    backgroundAttachment: 'scroll', 
+  
+    '@media screen and (min-width: 390px)': {
+      backgroundAttachment: 'scroll',  
     },
-    '@media screen and (min-width: 820px)': {
-      backgroundAttachment: 'scroll',  // Set to scroll at 768px (tablet size)
-      backgroundPosition: '1000px 0',  // Example custom positioning for 390px width
+    '@media screen and (min-width: 481px) and (max-width: 768px)': {
+      backgroundAttachment: 'scroll',  
+      backgroundSize: 'cover', 
     },
     '@media screen and (min-width: 1024px)': {
-      backgroundAttachment: 'fixed',   // Fixed for desktops and larger screens
-      backgroundSize: 'cover',         // Cover background for larger screens
-
+      backgroundAttachment: 'fixed',   
+      backgroundSize: 'cover',         
+      // backgroundPosition: 'center',    
     },
   }}
 >
