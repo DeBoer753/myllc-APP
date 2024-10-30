@@ -35,7 +35,7 @@ import { SuccessfulSubmit } from './successfulSubmit';
 // CONTACT
 export default function Contact() {
   
-  const [state, handleSubmit] = useForm("xgejejor");
+  const [state, handleSubmit] = useForm("mvgokoyz"); 
 
   if (state.succeeded) {
     return <SuccessfulSubmit />
@@ -51,6 +51,7 @@ export default function Contact() {
   
     '@media screen and (min-width: 390px)': {
       backgroundAttachment: 'scroll',
+      backgroundSize: '200% auto', 
 
  
     },
@@ -106,7 +107,7 @@ export default function Contact() {
                   <Form>
                     <VStack spacing={5}>
 
-                      <FormControl isRequired isInvalid={!!errors.firstName && touched.firstName}> 
+                      <FormControl  isInvalid={!!errors.firstName && touched.firstName}> 
                         <FormLabel htmlFor="firstName">First Name</FormLabel> 
                         <InputGroup>
                           <Input type="text" id="firstName" name="firstName" value={values.firstName} onChange={handleChange} placeholder="First Name" w={'200%'}/>
@@ -116,7 +117,7 @@ export default function Contact() {
                         </InputGroup>
                       </FormControl>
 
-                      <FormControl isRequired isInvalid={!!errors.lastName && touched.lastName}>
+                      <FormControl  isInvalid={!!errors.lastName && touched.lastName}>
                         <FormLabel htmlFor="lastName"> Last Name</FormLabel>
                         <InputGroup>
                           <Input type="text" id="lastName" name="lastName" value={values.lastName} onChange={handleChange} placeholder="Last Name" w={'200%'}/>
@@ -126,7 +127,7 @@ export default function Contact() {
                         </FormErrorMessage>
                       </FormControl>
 
-                      <FormControl isRequired isInvalid={!!errors.email && touched.email}>
+                      <FormControl  isInvalid={!!errors.email && touched.email}>
                         <FormLabel>Email</FormLabel>
                         <InputGroup>
                           <Input type="email" id="email" name="email" value={values.email} onChange={handleChange} placeholder="Your Email" />
@@ -136,7 +137,7 @@ export default function Contact() {
                         </FormErrorMessage>
                       </FormControl>
 
-                      <FormControl isRequired isInvalid={!!errors.message && touched.message}>
+                      <FormControl  isInvalid={!!errors.message && touched.message}>
                         <FormLabel>Message</FormLabel>
                         <Textarea name="message" placeholder="Your Message" rows={6} resize="none"/>
                         <FormErrorMessage>
