@@ -20,7 +20,7 @@ import {
 } from '@chakra-ui/react'
 
 // REACT
-import { useState } from 'react'
+import React from 'react';
 
 // FORMIK
 import { Formik, Form } from 'formik';
@@ -34,7 +34,6 @@ import { SuccessfulSubmit } from './successfulSubmit';
 
 // CONTACT
 export default function Contact() {
-  
   const [state, handleSubmit] = useForm("mvgokoyz"); 
 
   if (state.succeeded) {
@@ -64,7 +63,7 @@ export default function Contact() {
       backgroundSize: '100% auto', 
     },
   }}
->
+> 
       
       <Flex align="center" justify="center" flexDir={'column'} p={{ base: 16, lg: 16 }}>
 
@@ -139,7 +138,7 @@ export default function Contact() {
 
                       <FormControl  isInvalid={!!errors.message && touched.message}>
                         <FormLabel>Message</FormLabel>
-                        <Textarea name="message" placeholder="Your Message" rows={6} resize="none"/>
+                        <Textarea name="message" placeholder="Your Message" rows={6} resize="none" value={values.message} onChange={handleChange}/>
                         <FormErrorMessage>
                           {errors.message}
                         </FormErrorMessage>
