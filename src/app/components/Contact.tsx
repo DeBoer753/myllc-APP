@@ -33,20 +33,20 @@ import { validationSchema } from './validationSchema';
 import { SuccessfulSubmit } from './successfulSubmit';
 
 // FUNCTION: Autofill Watcher
-function AutofillWatcher() {
-  const { values, setFieldTouched, validateForm } = useFormikContext();
+// function AutofillWatcher() {
+//   const { values, setFieldTouched, validateForm } = useFormikContext();
 
-  useEffect(() => {
-    Object.keys(values).forEach((field) => {
-      if (values[field]) {
-        setFieldTouched(field, true, false);
-      }
-    });
-    validateForm();
-  }, [values, setFieldTouched, validateForm]);
+//   useEffect(() => {
+//     Object.keys(values).forEach((field) => {
+//       if (values[field]) {
+//         setFieldTouched(field, true, false);
+//       }
+//     });
+//     validateForm();
+//   }, [values, setFieldTouched, validateForm]);
 
-  return null;
-}
+//   return null;
+// }
 
 // CONTACT
 export default function Contact() {
