@@ -20,10 +20,10 @@ import {
 } from '@chakra-ui/react'
 
 // REACT
-import React from 'react';
+import React, {useEffect} from 'react';
 
 // FORMIK
-import { Formik, Form } from 'formik';
+import { Formik, Form, useFormikContext } from 'formik';
 
 // FORMSPREE
 import { useForm } from '@formspree/react';
@@ -31,6 +31,22 @@ import { useForm } from '@formspree/react';
 // COMPONENTS
 import { validationSchema } from './validationSchema';
 import { SuccessfulSubmit } from './successfulSubmit';
+
+// FUNCTION: Autofill Watcher
+function AutofillWatcher() {
+  const { values, setFieldTouched, validateForm } = useFormikContext();
+
+  useEffect(() => {
+    Object.keys(values).forEach((field) => {
+      if (values[field]) {
+        setFieldTouched(field, true, false);
+      }
+    });
+    validateForm();
+  }, [values, setFieldTouched, validateForm]);
+
+  return null;
+}
 
 // CONTACT
 export default function Contact() {
@@ -95,6 +111,13 @@ export default function Contact() {
                       message: ""
                     }
                   }
+                  // validationSchema={validationSchema}
+                  // onSubmit={async (values, actions) => {
+                  //   await handleSubmit(values);
+                  //   actions.setSubmitting(false);
+                  // }}
+                  // validateOnChange
+                  // validateOnBlur
                   validationSchema={validationSchema}
                   onSubmit={async (values, actions) => {
                     await handleSubmit(values);
