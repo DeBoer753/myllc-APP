@@ -32,22 +32,6 @@ import { useForm } from '@formspree/react';
 import { validationSchema } from './validationSchema';
 import { SuccessfulSubmit } from './successfulSubmit';
 
-// FUNCTION: Autofill Watcher
-// function AutofillWatcher() {
-//   const { values, setFieldTouched, validateForm } = useFormikContext();
-
-//   useEffect(() => {
-//     Object.keys(values).forEach((field) => {
-//       if (values[field]) {
-//         setFieldTouched(field, true, false);
-//       }
-//     });
-//     validateForm();
-//   }, [values, setFieldTouched, validateForm]);
-
-//   return null;
-// }
-
 // CONTACT
 export default function Contact() {
   const [state, handleSubmit] = useForm("mvgokoyz"); 
@@ -111,13 +95,6 @@ export default function Contact() {
                       message: ""
                     }
                   }
-                  // validationSchema={validationSchema}
-                  // onSubmit={async (values, actions) => {
-                  //   await handleSubmit(values);
-                  //   actions.setSubmitting(false);
-                  // }}
-                  // validateOnChange
-                  // validateOnBlur
                   validationSchema={validationSchema}
                   onSubmit={async (values, actions) => {
                     await handleSubmit(values);
