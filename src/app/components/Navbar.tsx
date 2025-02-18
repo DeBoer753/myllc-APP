@@ -139,7 +139,8 @@ export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, co
                     textDecoration: 'none',
                     bg: hoverBg,
                     color: 'rgba(0, 0, 0, 0.8)',
-                    transition: 'background-color 0.2s ease-in-out'
+                    transition: 'background-color 0.2s ease-in-out',
+                    cursor: 'pointer'
                   }}
                   onClick={() => scrollToSection(linkToRefMap[link as keyof typeof linkToRefMap])}
                 >

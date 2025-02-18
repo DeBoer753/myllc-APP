@@ -27,7 +27,7 @@ export default function Footer(){
   
     return (
           <Box bg={'rgba(42, 42, 42, 0.8)'} p={5} textAlign={'center'} maxW={''}>
-            <Text>© 2024 <Text as={'span'} fontWeight={'bold'}>Graybuck Media LLC</Text></Text>
+            <Text>© 2025 <Text as={'span'} fontWeight={'bold'}>Graybuck Media</Text></Text>
           </Box>
     )
 }

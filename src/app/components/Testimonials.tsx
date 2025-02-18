@@ -46,8 +46,8 @@ export default function Testimonials() {
       </Box>
 
       <Text fontSize={{ base: 'xl', md: '2xl' }} textAlign={'center'} maxW={'3xl'} fontStyle={'italic'} fontWeight={'thin'} as={motion.div} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
-      Myles is a smart, creative and driven individual. He is very inquisitive and loves problem solving.
-       As a colleague and mentor I have seen Myles continually advance his skills in digital learning combining 
+      Myles is a smart, creative, and driven individual. He is very inquisitive and loves problem solving.
+       As a colleague and mentor I have seen Myles continually advance his skills in digital learning combined 
        with creating projects implementing the core foundations of web development in HTML5, CSS, and JavaScript.
         Myles is a team player and a great asset to any team!
       </Text>
