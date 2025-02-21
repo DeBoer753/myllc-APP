@@ -54,7 +54,7 @@ const Card = ({ heading, description, toolsUsed, compatible, href, image }: Card
 // PROJECTS
 export default function Projects() {
 
-  const linkArray = ['https://github.com/DeBoer753/bug-tracker-PROJECT#readme', 'https://sheltr.netlify.app/', 'https://www.deboer753-weatherbox.com/', 'https://graybuckmedia.com/']
+  const linkArray = ['https://www.davidglassmusic.com/', 'https://graybuckmedia.com/']
 
   return (
     <Box id="projects" bg={'rgba(130, 130, 130, 0.8)'} p={7}>
@@ -67,49 +67,28 @@ export default function Projects() {
       <Container maxW={'5xl'} mt={'50px'} mb={'30px'} p={0} overflow={'hidden'}>
         <Flex flexWrap="wrap" gridGap={12} justify="center" >
           
-        <Box as={motion.div} initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
-            <Card
-              heading={'Graybuck Media'}
-              description={'My website showcases a comprehensive range of services, including web development, photography, videography, and graphic design, all designed to help your brand stand out. Whether you are looking to build a professional website, capture high-quality visuals, or design eye-catching marketing materials, I’m here to provide personalized support that aligns with your unique business goals.'}
-              toolsUsed={'Tools Used: Next.js, Typescript, Chakra UI, Framer Motion, and Photoshop'}
-              compatible={'Compatible Devices: desktop, tablet, mobile'}
-              href={linkArray[3]}
-              image={'/imgs/graybuckmedia.png'}
-            />
-          </Box>
-          
           <Box as={motion.div} initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
             <Card
-              heading={'Bugsly'}
-              description={'A group bug tracking project that gives users an opportunity to list issues while collaborating with teammates to tackle problems firsthand. Users can input issue priority, the status of the issue, and assign certain issues to those with certain development strengths. Bugsly is simple, useful, and easy to use all in one.'}
-              toolsUsed={'Tools Used: HTML, CSS, JavaScript, React.js, and Photoshop'}
+              heading={'David Glass Music'}
+              description={'We designed and developed a sleek, immersive website for David Glass, an award-winning Bay Area pianist and filmmaker, showcasing his music and acclaimed films. With numerous accolades for his storytelling and cinematic excellence, the site seamlessly blends artistry and functionality, offering high-quality visuals, an interactive media player, and a user-friendly layout.'}
+              toolsUsed={'Tools Used: Next.js, Typescript, Tailwind, Framer Motion, and Photoshop'}
               compatible={'Compatible Devices: desktop, tablet, and smartphone'}
               href={linkArray[0]}
-              image={'/imgs/bugsly.png'}
+              image={'/imgs/davidglass.png'}
             /> 
           </Box>
 
           <Box as={motion.div} initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
             <Card
-              heading={'Sheltr'}
-              description={'A group project that extends a helping hand by providing a platform of collected data from multiple API sources of local shelters integrated with google maps. The three given cities are some of the most affected cities in the U.S to experience homelessness. Sheltr was created using HTML, CSS, JavaScript, and open source API’s.'}
-              toolsUsed={'Tools Used: HTML, CSS, and JavaScript'}
-              compatible={'Compatible Devices: desktop and tablet'}
+              heading={'Graybuck Media'}
+              description={'Our website showcases a comprehensive range of services, including web development, photography, videography, and graphic design, all aimed at helping brands stand out. Whether a business needs a professional website, high-quality visuals, or eye-catching marketing materials, the services offered are tailored to provide personalized support that aligns with each client’s unique goals.'}
+              toolsUsed={'Tools Used: Next.js, Typescript, Chakra UI, Framer Motion, and Photoshop'}
+              compatible={'Compatible Devices: desktop, tablet, and smartphone'}
               href={linkArray[1]}
-              image={'/imgs/sheltr.png'}
+              image={'/imgs/graybuckmedia.png'}
             />
           </Box>
 
-          <Box as={motion.div} initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
-            <Card
-              heading={'Weather Box'}
-              description={'Weather Box is an interactive weather application where users can input a name of a city which then displays the city\'s forecast. The theme is based around unpacking a box with weather related contents inside. Upon each city inputted, and depending on the daily and weekly forecast given, images will appear that represent activities of what is suited best for the selected forecast.'}
-              toolsUsed={'Tools Used: HTML, CSS, JavaScript, React.js, Redux, and Photoshop'}
-              compatible={'Compatible Devices: desktop and tablet'}
-              href={linkArray[2]} 
-              image={'/imgs/weatherbox.png'}
-            />
-          </Box> 
         </Flex> 
       </Container> 
     </Box> 
