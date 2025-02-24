@@ -69,7 +69,7 @@ export default function Projects() {
           
           <Box as={motion.div} initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
             <Card
-              heading={'David Glass Music'}
+              heading={'David Glass'}
               description={'We designed and developed a sleek, immersive website for David Glass, an award-winning Bay Area pianist and filmmaker, showcasing his music and acclaimed films. With numerous accolades for his storytelling and cinematic excellence, the site seamlessly blends artistry and functionality, offering high-quality visuals, an interactive media player, and a user-friendly layout.'}
               toolsUsed={'Tools Used: Next.js, Typescript, Tailwind, Framer Motion, and Photoshop'}
               compatible={'Compatible Devices: desktop, tablet, and smartphone'}
