@@ -17,7 +17,24 @@ export default function Testimonials() {
       spacing={{ base: 8, md: 10 }}
       align={'center'}
       direction={'column'}>
-        <Heading pt={5} fontSize={{ base: '2xl', sm: '4xl' }}>Testimonials</Heading>
+      <Heading pt={5} fontSize={{ base: '2xl', sm: '4xl' }}>Testimonials</Heading>
+
+      <Text fontSize={{ base: 'xl', md: '2xl' }} textAlign={'center'} maxW={'3xl'} fontStyle={'italic'} fontWeight={'thin'}  as={motion.div} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
+      Best experience ever! I can’t say enough great things about Graybuck Media! From the very first moment I was 
+      introduced to Myles I was taken by his friendly approach and impressed with his knowledge in both web design and the internet. 
+      Myles created a fantastic website for me. As a musician I had certain expectations with how I wanted to present myself.  
+      Myles conveyed a confidence in how he thought the site should look with regards to my photos, biography, music player, graphics, etc. 
+      When he finally presented my website I was thrilled! I feel proud to have this website represent me! He made the entire experience fun! 
+      Communication was excellent during the entire process. Highly recommend Myles for your next website project! 
+      </Text>
+      <Box textAlign={'center'}>
+        <Text fontWeight={600}>David Glass</Text>
+        <Text fontSize={'sm'} color={useColorModeValue('gray.400', 'gray.400')}>
+          Client
+        </Text>
+        <Divider mt={10} w={200}/>
+      </Box>
+
       <Text fontSize={{ base: 'xl', md: '2xl' }} textAlign={'center'} maxW={'3xl'} fontStyle={'italic'} fontWeight={'thin'}  as={motion.div} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
       There never seemed to be a question in his mind whether Myles would continue this pursuit. 
       We then spent many zoom calls over the course of the past year or so breaking down coding challenges, 
@@ -45,18 +62,6 @@ export default function Testimonials() {
         <Divider mt={10} w={200}/>
       </Box>
 
-      <Text fontSize={{ base: 'xl', md: '2xl' }} textAlign={'center'} maxW={'3xl'} fontStyle={'italic'} fontWeight={'thin'} as={motion.div} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
-      Myles is a smart, creative, and driven individual. He is very inquisitive and loves problem solving.
-       As a colleague and mentor I have seen Myles continually advance his skills in digital learning combined 
-       with creating projects implementing the core foundations of web development in HTML5, CSS, and JavaScript.
-        Myles is a team player and a great asset to any team!
-      </Text>
-      <Box textAlign={'center'}>
-        <Text fontWeight={600}>Donte Burney</Text>
-        <Text fontSize={'sm'} color={useColorModeValue('gray.400', 'gray.400')}>
-          Software Engineer
-        </Text>
-      </Box>
     </Stack>
   )
 }
