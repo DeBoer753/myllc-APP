@@ -21,14 +21,14 @@ import { motion } from 'framer-motion';
 interface CardProps {
   heading: string
   description: string
-  toolsUsed: string
+  launchDate: string
   compatible: string
   href: string
   image: string
 }
 
 // CARD TEMPLATE
-const Card = ({ heading, description, toolsUsed, compatible, href, image }: CardProps) => {
+const Card = ({ heading, description, launchDate, compatible, href, image }: CardProps) => {
 
   return (
     <Flex h={{base: 630, md: "100%", lg: '100%'}} w={{base: '100%', md: '100%', lg: '100%'}} textAlign={{base: 'center', md: 'left'}} gap={{base: 0, md: 5, lg: 5}} border={'none'} bg={'rgba(68, 68, 68, 0.8)'} flexDirection={{base: 'column', md: 'row'}} maxW={{ base: '500px', md: '900px' }} borderWidth="1px" borderRadius="lg" overflow="hidden" justify={'center'} p={5}> 
@@ -41,9 +41,9 @@ const Card = ({ heading, description, toolsUsed, compatible, href, image }: Card
           <Box mt={2}>
             <Heading size="md" mb={3}>{heading}</Heading>
             <Text mb={2} fontSize={'sm'}> {description}</Text>
-            <Text mb={2} fontSize={'sm'}> {toolsUsed}</Text>
-            <Text mb={2} fontSize={'sm'}> {compatible}</Text>
-            <Button as="a" href={href} target="_blank"  bg={'rgba(17, 17, 17, 0.8)'} h={7} p={4} size={'sm'} ml={0}>Learn more</Button>
+            <Text mb={2} fontSize={'sm'}><Text as={'span'} fontWeight={600}>Launch Date:</Text>  {launchDate}</Text>
+            <Text mb={2} fontSize={'sm'}><Text as={'span'} fontWeight={600}>Compatible Devices:</Text> {compatible}</Text>
+            <Button as="a" href={href} target="_blank"  bg={'rgba(17, 17, 17, 0.8)'} h={7} p={4} size={'sm'} ml={0}>View Site</Button>
           </Box>
         </Flex>
 
@@ -71,8 +71,8 @@ export default function Projects() {
             <Card
               heading={'David Glass'}
               description={'We designed and developed a sleek, immersive website for David Glass, an award-winning Bay Area pianist and filmmaker, showcasing his music and acclaimed films. With numerous accolades for his storytelling and cinematic excellence, the site seamlessly blends artistry and functionality, offering high-quality visuals, an interactive media player, and a user-friendly layout.'}
-              toolsUsed={'Tools Used: Next.js, Typescript, Tailwind, Framer Motion, and Photoshop'}
-              compatible={'Compatible Devices: desktop, tablet, and smartphone'}
+              launchDate={'February 2025'}
+              compatible={'desktop, tablet, and smartphone'}
               href={linkArray[0]}
               image={'/imgs/davidglass.png'}
             /> 
@@ -82,8 +82,8 @@ export default function Projects() {
             <Card
               heading={'Graybuck Media'}
               description={'Our website showcases a comprehensive range of services, including web development, photography, videography, and graphic design, all aimed at helping brands stand out. Whether a business needs a professional website, high-quality visuals, or eye-catching marketing materials, the services offered are tailored to provide personalized support that aligns with each client’s unique goals.'}
-              toolsUsed={'Tools Used: Next.js, Typescript, Chakra UI, Framer Motion, and Photoshop'}
-              compatible={'Compatible Devices: desktop, tablet, and smartphone'}
+              launchDate={'January 2025'}
+              compatible={'desktop, tablet, and smartphone'}
               href={linkArray[1]}
               image={'/imgs/graybuckmedia.png'}
             />

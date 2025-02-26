@@ -161,6 +161,9 @@ export default function Navbar({ homeRef, aboutRef, servicesRef, projectsRef, co
                   px={2}
                   py={1}
                   rounded={'md'}
+                  _hover={{
+                    cursor: 'pointer'
+                  }}
                   onClick={() => {
                     scrollToSection(linkToRefMap[link as keyof typeof linkToRefMap]);
                     onClose();  // Close mobile menu on link click
