@@ -44,7 +44,7 @@ export default function Testimonials() {
       <Box textAlign={'center'}>
         <Text fontWeight={600}>Ryan McCabe</Text>
         <Text fontSize={'sm'} color={useColorModeValue('gray.400', 'gray.400')}>
-          Software Engineer 
+          Software Engineer & Mentor
         </Text>
         <Divider mt={10} w={200}/>
       </Box>
@@ -57,7 +57,7 @@ export default function Testimonials() {
       <Box textAlign={'center'}>
         <Text fontWeight={600}>Lachlan Heywood</Text>
         <Text fontSize={'sm'} color={useColorModeValue('gray.400', 'gray.400')}>
-          Software Engineer 
+          Software Engineer & Mentor
         </Text>
         <Divider mt={10} w={200}/>
       </Box>
