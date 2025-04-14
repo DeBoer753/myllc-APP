@@ -54,7 +54,7 @@ const Card = ({ heading, description, launchDate, compatible, href, image }: Car
 // PROJECTS
 export default function Projects() {
 
-  const linkArray = ['https://www.davidglassmusic.com/', 'https://graybuckmedia.com/']
+  const linkArray = ['https://fdpc-app.vercel.app/', 'https://www.davidglassmusic.com/', 'https://graybuckmedia.com/']
 
   return (
     <Box id="projects" bg={'rgba(130, 130, 130, 0.8)'} p={7}>
@@ -66,6 +66,17 @@ export default function Projects() {
 
       <Container maxW={'5xl'} mt={'50px'} mb={'30px'} p={0} overflow={'hidden'}>
         <Flex flexWrap="wrap" gridGap={12} justify="center" >
+
+        <Box as={motion.div} initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
+            <Card
+              heading={'The Framing Dragon'}
+              description={'Still under construction'}
+              launchDate={'TBA'}
+              compatible={'desktop, tablet, and smartphone'}
+              href={linkArray[0]}
+              image={'/imgs/framingdragon.png'}
+            /> 
+          </Box>
           
           <Box as={motion.div} initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
             <Card
@@ -73,7 +84,7 @@ export default function Projects() {
               description={'We designed and developed a sleek, immersive website for David Glass, an award-winning Bay Area pianist and filmmaker, showcasing his music and acclaimed films. With numerous accolades for his storytelling and cinematic excellence, the site seamlessly blends artistry and functionality, offering high-quality visuals, an interactive media player, and a user-friendly layout.'}
               launchDate={'February 2025'}
               compatible={'desktop, tablet, and smartphone'}
-              href={linkArray[0]}
+              href={linkArray[1]}
               image={'/imgs/davidglass.png'}
             /> 
           </Box>
@@ -84,7 +95,7 @@ export default function Projects() {
               description={'Our website showcases a comprehensive range of services, including web development, photography, videography, and graphic design, all aimed at helping brands stand out. Whether a business needs a professional website, high-quality visuals, or eye-catching marketing materials, the services offered are tailored to provide personalized support that aligns with each client’s unique goals.'}
               launchDate={'January 2025'}
               compatible={'desktop, tablet, and smartphone'}
-              href={linkArray[1]}
+              href={linkArray[2]}
               image={'/imgs/graybuckmedia.png'}
             />
           </Box>
