@@ -70,8 +70,8 @@ export default function Projects() {
         <Box as={motion.div} initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1}}} >
             <Card
               heading={'The Framing Dragon'}
-              description={'Still under construction'}
-              launchDate={'TBA'}
+              description={'We crafted a custom experience and approachable website for The Framing Dragon, a boutique picture framing studio located in Mill Valley. Our work included professional photography and photo editing to highlight the studio’s unique selection of high-end frame styles. The site emphasizes the studio’s artisanal craftsmanship and personal service, offering users a clean layout, intuitive navigation, and a cohesive brand experience.'}
+              launchDate={'April 2025'}
               compatible={'desktop, tablet, and smartphone'}
               href={linkArray[0]}
               image={'/imgs/framingdragon.png'}
