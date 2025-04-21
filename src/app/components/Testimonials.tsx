@@ -63,8 +63,8 @@ export default function Testimonials() {
       </Box>
 
       <Heading fontStyle="italic">So...what do you think?</Heading>
-      <Text lineHeight="1.8"  maxW={'3xl'} textAlign={'center'}  fontSize={17} fontWeight={'bold'} color={'white'}>
-        We invite you to embark on a journey of digital transformation with a custom designed website tailored to your business needs. Our experienced team is ready to collaborate with you, creating a digital presence that perfectly reflects your brand identity. As a special offer, the first three clients will receive exclusive savings, providing exceptional value while enhancing your online presence. Don’t miss this limited-time opportunity to elevate your brand with a professional, high-quality website. Contact us today, and let’s bring your vision to life. 
+      <Text lineHeight="1.8"  maxW={'3xl'} textAlign={'center'}  fontSize={20} fontWeight={'bold'} color={'white'}>
+        We invite you to take trail on a journey of digital transformation with a custom designed website tailored to your business needs. Our experienced team is ready to collaborate with you, creating a digital presence that perfectly reflects your brand identity. We can help - and we know that we can.  
       </Text>
   
 
