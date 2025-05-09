@@ -31,7 +31,7 @@ interface CardProps {
 const Card = ({ heading, description, launchDate, compatible, href, image }: CardProps) => {
 
   return (
-    <Flex h={{base: 630, md: "100%", lg: '100%'}} w={{base: '100%', md: '100%', lg: '100%'}} textAlign={{base: 'center', md: 'left'}} gap={{base: 0, md: 5, lg: 5}} border={'none'} bg={'rgba(68, 68, 68, 0.8)'} flexDirection={{base: 'column', md: 'row'}} maxW={{ base: '500px', md: '900px' }} borderWidth="1px" borderRadius="lg" overflow="hidden" justify={'center'} p={5}> 
+    <Flex h={{base: 600, md: "100%", lg: '100%'}} w={{base: '100%', md: '100%', lg: '100%'}} textAlign={{base: 'center', md: 'left'}} gap={{base: 0, md: 5, lg: 5}} border={'none'} bg={'rgba(68, 68, 68, 0.8)'} flexDirection={{base: 'column', md: 'row'}} maxW={{ base: '500px', md: '900px' }} borderWidth="1px" borderRadius="lg" overflow="hidden" justify={'center'} p={5}> 
         
         <Flex w={'100%'} h={300} align={'center'} justify={'center'} color={'white'}>
           <Image src={image} alt="Image Alt Text" w="" h="" objectFit="cover" />
