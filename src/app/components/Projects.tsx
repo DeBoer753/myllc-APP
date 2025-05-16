@@ -54,7 +54,7 @@ const Card = ({ heading, description, launchDate, compatible, href, image }: Car
 // PROJECTS
 export default function Projects() {
 
-  const linkArray = ['https://fdpc-app.vercel.app/', 'https://www.davidglassmusic.com/', 'https://graybuckmedia.com/']
+  const linkArray = ['https://www.theframingdragon.com/', 'https://www.davidglassmusic.com/', 'https://graybuckmedia.com/']
 
   return (
     <Box id="projects" bg={'rgba(130, 130, 130, 0.8)'} p={7}>
