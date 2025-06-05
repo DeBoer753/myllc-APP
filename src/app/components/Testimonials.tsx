@@ -20,6 +20,19 @@ export default function Testimonials() {
       <Heading pt={5} fontSize={{ base: '2xl', sm: '4xl' }}>Testimonials</Heading>
 
       <Text fontSize={{ base: 'sm', md: '2xl' }}textAlign={'center'} maxW={'3xl'} fontStyle={'italic'} fontWeight={'thin'}  as={motion.div} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
+      <Text as={'span'} fontWeight={600}>&ldquo;</Text>We highly recommend Graybuck Media and Myles specifically for his outstanding work. We appreciate his expertise in web development and very refined artistic skills, his warmth and enthusiasm makes him a pleasure to work with. 
+      The high quality of his work speaks for itself. - The Framing Dragon 🐉 <Text as={'span'} fontWeight={600}>&ldquo;</Text>
+      </Text>
+      <Box textAlign={'center'}>
+        <Text fontWeight={600}>The Framing Dragon</Text>
+        <Text fontSize={'sm'} color={useColorModeValue('gray.400', 'gray.400')}>
+          Client
+        </Text>
+        <Divider mt={10} w={200}/>
+      </Box>
+
+
+      <Text fontSize={{ base: 'sm', md: '2xl' }}textAlign={'center'} maxW={'3xl'} fontStyle={'italic'} fontWeight={'thin'}  as={motion.div} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
       <Text as={'span'} fontWeight={600}>&ldquo;</Text>Best experience ever - I can’t say enough great things about Graybuck Media! From the very first moment I was 
       introduced to Myles I was taken by his friendly approach and impressed with his knowledge in both web design and the internet. 
       Myles created a fantastic website for me. As a musician I had certain expectations with how I wanted to present myself.  
