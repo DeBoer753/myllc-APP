@@ -62,19 +62,6 @@ export default function Testimonials() {
         <Divider mt={10} w={200}/>
       </Box>
 
-      <Text fontSize={{ base: 'sm', md: '2xl' }} textAlign={'center'} maxW={'3xl'} fontStyle={'italic'} fontWeight={'thin'} as={motion.div} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
-      <Text as={'span'} fontWeight={600}>&ldquo;</Text>Myles is great at asking the right questions and digging deep into the topics he is working on. 
-      He is great on a team, quick to assist where he can, while also working diligently to achieve team 
-      goals and share knowledge when he can. He is persistent and would be a great addition to any team.<Text as={'span'} fontWeight={600}>&ldquo;</Text>
-      </Text>
-      <Box textAlign={'center'}>
-        <Text fontWeight={600}>Lachlan Heywood</Text>
-        <Text fontSize={'sm'} color={useColorModeValue('gray.400', 'gray.400')}>
-          Software Engineer & Mentor
-        </Text>
-        <Divider mt={10} w={200}/>
-      </Box>
-
       <Heading fontStyle="italic">So...what do you think?</Heading>
       <Text lineHeight="1.8"  maxW={'3xl'} textAlign={'center'}  fontSize={20} fontWeight={'bold'} color={'white'}>
         We invite you to take trail on a journey of digital transformation with a custom designed website tailored to your business needs. Our experienced team is ready to collaborate with you, creating a digital presence that perfectly reflects your brand identity. We can help - and we know that we can.  
